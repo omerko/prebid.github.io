@@ -103,7 +103,8 @@ pbjs.que.push(function() {
     /* Required for the DFP video URL to be built correctly in the
     `bidsBackHandler` */
     pbjs.setConfig({
-        usePrebidCache: true
+        /* Or whatever your preferred video cache URL is */
+        cache: { url: 'https://prebid.adnxs.com/pbc/v1/cache' }
     });
 
     pbjs.requestBids({

@@ -88,7 +88,8 @@
        /* Use the Prebid Cache - required for video ads */
 
        pbjs.setConfig({
-         usePrebidCache: true
+         /* Or whatever your preferred video cache URL is */
+         cache: { url: 'https://prebid.adnxs.com/pbc/v1/cache' }
        });
 
        pbjs.requestBids({

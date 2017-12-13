@@ -47,7 +47,8 @@
       pbjs.addAdUnits(videoAdUnit); // add your ad units to the bid request
 
       pbjs.setConfig({ 
-        usePrebidCache: true 
+        /* Or whatever your preferred video cache URL is */
+        cache: { url: 'https://prebid.adnxs.com/pbc/v1/cache' }
       });
 
       pbjs.requestBids({
